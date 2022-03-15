@@ -13,10 +13,17 @@ a {
     font-size: large;    
 }
 
+a h2 {
+    color: black;
+}
+
+a p {
+    color: black;
+}
+
 p {
     font-family: 'Cookie', cursive, bold;
     font-size: large;
-
 }
 
 
@@ -155,3 +162,35 @@ p {
     flex-direction: column;
     justify-content: space-around;
 }
+
+/*Clases shop*/
+
+.main__ul-shop {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 2%;
+}
+
+.main__ul__li-shop {
+    width: 30%;
+    height: 50%;
+}
+
+.main__ul__li__a {
+}
+
+.main__ul__img-shop {
+    width: 100%;
+    height: 50%;
+
+}
+
+
+
+
+
+
+
