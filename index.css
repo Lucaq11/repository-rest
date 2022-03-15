@@ -1,19 +1,29 @@
+/*Clases generales*/
+
 * {
     text-decoration: none;
     margin: 0;
     padding: 0;
+    list-style: none;
 }
+
+a {
+    font-family: 'Cookie', cursive, bold;
+    color: aliceblue;
+    font-size: large;    
+}
+
 
 @media screen and (max-width:768px) {
     
     .index__body {
         display: grid;
         grid-template-columns: 100%;
-        grid-template-rows: 80px 300px 80px;     
+        grid-template-rows: 100px 300px 80px;     
         grid-template-areas:"header"
                             "main"
                             "footer";      }
-}
+    }
 
 .header {
     display: grid;
@@ -21,10 +31,12 @@
     grid-template-rows: 50% 50%;
     grid-template-areas: "logo"
                          "nav";
+    background-size: cover;
+    background-image: url(http://imgfz.com/i/bOnyMmW.jpeg); ;
 }
 
 .header__nav {
-    background-color: aqua;
+    background-color: inherit;
     grid-area: nav;
     display: grid;
     grid-template-columns: 100%;
@@ -35,30 +47,84 @@
 
 
 .header__div__logo {
-    background-color: brown;
+    background-color: inherit;
     grid-area: logo;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
+.header__logo__div-img {
+    height: 40px; 
+}
+
 .header__ul__menu {
     grid-area: ul-menu;
     display: inline-flex;
-    justify-content: space-between;
-    background-color: beige;
+    justify-content: space-around;
+    background-color: inherit;
+    font-family: 'Cookie', cursive, bold;
+    color: aliceblue;
 }
 
 .header__ul__search {
     grid-area: ul-search;
     display: inline-flex;
     justify-content: center;
+    gap: 10%;
+    background-color: inherit;
 }
 
 .index__main {
     grid-area: main;
+    background-color: aliceblue;
+}
+
+.main__div-background {
+    height: 60%;
+    background-image: url(https://siempreonfit.com/wp-content/uploads/2021/04/ChicasEntrenando-scaled.jpeg);
+    background-size: cover;
+
+}
+
+.index__main__div {
+    width: 100%;
+    height: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.index__main__div-img {
+    height: 100%;
+    width: 50%;
 }
 
 .footer {
     grid-area: footer;
+    background-image: url(http://imgfz.com/i/T2xPZX3.jpeg);
+    background-size: cover;
+    background-position-y:center;
+    background-position-x:center;
+    display: flex;
+}
+
+.footer__div {
+ display: flex;
+ width: 50%;
+ flex-direction: column;
+ text-align: center;
+ 
+}
+
+.footer__h2 {
+    font-family: 'Cookie', cursive, bold;
+    color: aliceblue;
+    font-size: large;
+}
+
+.iconify {
+    width: 15px;
+    height: 15px;
+    color: aliceblue;
 }
