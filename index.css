@@ -13,10 +13,16 @@ a {
     font-size: large;    
 }
 
+p {
+    font-family: 'Cookie', cursive, bold;
+    font-size: large;
+
+}
+
 
 @media screen and (max-width:768px) {
     
-    .index__body {
+.index__body {
         display: grid;
         grid-template-columns: 100%;
         grid-template-rows: 100px 300px 80px;     
@@ -89,10 +95,12 @@ a {
 
 .index__main__div {
     width: 100%;
-    height: 40%;
+    height: 30%;
     display: flex;
     flex-direction: row;
     justify-content: center;
+    gap: 10%;
+    margin-top: 2%;
 }
 
 .index__main__div-img {
@@ -127,4 +135,17 @@ a {
     width: 15px;
     height: 15px;
     color: aliceblue;
+}
+
+/*Clases point-of-sale*/
+.pos__main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.h2__pos {
+     font-family: 'Cookie', cursive, bold;
+     font-size: large;    
 }
