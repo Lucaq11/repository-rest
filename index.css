@@ -138,14 +138,20 @@ p {
 }
 
 /*Clases point-of-sale*/
-.pos__main {
+.flex__main {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
 }
 
-.h2__pos {
+.h2__text {
      font-family: 'Cookie', cursive, bold;
      font-size: large;    
+}
+
+.flex__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
