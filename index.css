@@ -36,7 +36,17 @@ p {
         grid-template-areas:"header"
                             "main"
                             "footer";      }
-    }
+
+.index__main {
+    grid-area: main;
+}                                
+   
+.index__main__div {
+    margin-top: 2%;
+}
+
+.main__div-background {
+    height: 60%;}
 
 .header {
     display: grid;
@@ -44,8 +54,6 @@ p {
     grid-template-rows: 50% 50%;
     grid-template-areas: "logo"
                          "nav";
-    background-size: cover;
-    background-image: url(http://imgfz.com/i/bOnyMmW.jpeg); ;
 }
 
 .header__nav {
@@ -71,6 +79,78 @@ p {
     height: 40px; 
 }
 
+.iconify {
+    width: 15px;
+    height: 15px;
+    color: aliceblue;
+}
+
+.footer__h2 {
+    font-size: large;
+}
+
+}
+
+/*hasta aca llega el media -768px*/
+
+@media screen and (min-width:769px) {
+
+a {
+    font-size: xxx-large;
+}
+
+.header {
+    height: 127px;
+    display: flex;
+    flex-direction: row;}
+
+.header__logo__div-img {
+    height: 127px;
+} 
+
+.header__nav {
+    width: 100%;
+}
+
+.header__ul__menu {
+    width: 80%;
+    height: 100%;
+    align-items: center;
+}
+
+.header__ul__search {
+    justify-content: flex-end;
+    width: 19%;
+}
+
+.index__main {
+    height: 150vh;
+    display: flex;
+    flex-direction:column;
+}
+
+.iconify {
+    width: 40px;
+    height: 40px;
+    color: aliceblue;
+}
+
+.main__div-background {
+    height: 60%;
+    max-height: 100%;
+}
+
+.footer__h2 {
+    font-size: xxx-large;
+}
+}
+
+.header {
+background-size: cover;
+background-image: url(http://imgfz.com/i/bOnyMmW.jpeg);
+}
+
+
 .header__ul__menu {
     grid-area: ul-menu;
     display: inline-flex;
@@ -84,17 +164,15 @@ p {
     grid-area: ul-search;
     display: inline-flex;
     justify-content: center;
-    gap: 10%;
+    column-gap: 10%;
     background-color: inherit;
 }
 
 .index__main {
-    grid-area: main;
     background-color: aliceblue;
 }
 
 .main__div-background {
-    height: 60%;
     background-image: url(https://siempreonfit.com/wp-content/uploads/2021/04/ChicasEntrenando-scaled.jpeg);
     background-size: cover;
 
@@ -107,7 +185,6 @@ p {
     flex-direction: row;
     justify-content: center;
     gap: 10%;
-    margin-top: 2%;
 }
 
 .index__main__div-img {
@@ -134,13 +211,6 @@ p {
 
 .footer__h2 {
     font-family: 'Cookie', cursive, bold;
-    color: aliceblue;
-    font-size: large;
-}
-
-.iconify {
-    width: 15px;
-    height: 15px;
     color: aliceblue;
 }
 
@@ -177,9 +247,6 @@ p {
 .main__ul__li-shop {
     width: 30%;
     height: 50%;
-}
-
-.main__ul__li__a {
 }
 
 .main__ul__img-shop {
