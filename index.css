@@ -89,6 +89,11 @@ p {
     font-size: large;
 }
 
+.h2__text {
+    font-family: 'Cookie', cursive, bold;
+    font-size: large;    
+}
+
 }
 
 /*hasta aca llega el media -768px*/
@@ -143,6 +148,26 @@ a {
 .footer__h2 {
     font-size: xxx-large;
 }
+
+.flex__main {
+    height: 100vh;
+}
+
+p {
+    font-family: 'Cookie', cursive, bold;
+    font-size: xxx-large;
+}
+
+.h2__text {
+    font-family: 'Cookie', cursive, bold;
+    font-size: xxx-large;    
+}
+
+.iframe_pos {
+    width: 100vh;
+    height: 50vh;
+}
+
 }
 
 .header {
@@ -220,11 +245,7 @@ background-image: url(http://imgfz.com/i/bOnyMmW.jpeg);
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-}
-
-.h2__text {
-     font-family: 'Cookie', cursive, bold;
-     font-size: large;    
+    background-color: aliceblue;
 }
 
 .flex__form {
