@@ -10,11 +10,24 @@
 a {
     font-family: 'Cookie', cursive, bold;
     color: aliceblue;
-    font-size: large;    
+    font-size: large;  
+    transition: 2s color;
+}
+
+a:hover {
+    color: black;
+}
+
+a h2 {
+    transition: 2s;
 }
 
 a h2 {
     color: black;
+}
+
+a h2:hover {
+    color: #f10dcd;
 }
 
 a p {
@@ -24,6 +37,15 @@ a p {
 p {
     font-family: 'Cookie', cursive, bold;
     font-size: large;
+}
+
+.iconify {
+    transition: 2s color;
+}
+
+.iconify:hover {
+    color: black;
+
 }
 
 
@@ -91,8 +113,15 @@ p {
 
 .h2__text {
     font-family: 'Cookie', cursive, bold;
-    font-size: large;    
+    font-size: large;   
 }
+
+
+.main__ul__img-shop {
+    width: 100%;
+    height: 50%;
+}
+
 
 }
 
@@ -166,6 +195,15 @@ p {
 .iframe_pos {
     width: 100vh;
     height: 50vh;
+}
+
+.flex__form {
+    width: 100vh;
+    height: 50vh;    
+}
+
+.main__ul__img-shop {
+    height: 350px;
 }
 
 }
@@ -268,13 +306,10 @@ background-image: url(http://imgfz.com/i/bOnyMmW.jpeg);
 .main__ul__li-shop {
     width: 30%;
     height: 50%;
+    text-align: center;
+    padding-top: 5%;
 }
 
-.main__ul__img-shop {
-    width: 100%;
-    height: 50%;
-
-}
 
 
 
